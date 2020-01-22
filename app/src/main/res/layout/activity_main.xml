@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Temperature"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        app:layout_constraintEnd_toEndOf="@+id/tempButton"
+        app:layout_constraintStart_toStartOf="@+id/tempButton"
+        app:layout_constraintTop_toTopOf="@+id/tempButton" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Temporary light"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        app:layout_constraintEnd_toEndOf="@+id/gasButton"
+        app:layout_constraintStart_toStartOf="@+id/gasButton"
+        app:layout_constraintTop_toTopOf="@+id/gasButton" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Flame"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        app:layout_constraintEnd_toEndOf="@+id/flameButton"
+        app:layout_constraintStart_toStartOf="@+id/flameButton"
+        app:layout_constraintTop_toTopOf="@+id/flameButton" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Humidity"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        app:layout_constraintEnd_toEndOf="@+id/humidButton"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/humidButton"
+        app:layout_constraintTop_toTopOf="@+id/humidButton" />
+
+    <Button
+        android:id="@+id/flameButton"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="112dp"
+        android:background="#33808080"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/gasButton"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="112dp"
+        android:background="#33808080"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/humidButton"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="16dp"
+        android:background="#33808080"
+        android:onClick="humidOnclick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tempButton"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="96dp"
+        android:background="#33808080"
+        android:onClick="tempOnclick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tempText"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:text="°C"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/tempButton"
+        app:layout_constraintEnd_toEndOf="@+id/tempButton"
+        app:layout_constraintStart_toStartOf="@+id/tempButton"
+        app:layout_constraintTop_toTopOf="@+id/tempButton" />
+
+    <TextView
+        android:id="@+id/humidText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/humidButton"
+        app:layout_constraintEnd_toEndOf="@+id/humidButton"
+        app:layout_constraintStart_toStartOf="@+id/humidButton"
+        app:layout_constraintTop_toTopOf="@+id/humidButton" />
+
+    <TextView
+        android:id="@+id/gasText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No data"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/gasButton"
+        app:layout_constraintEnd_toEndOf="@+id/gasButton"
+        app:layout_constraintStart_toStartOf="@+id/gasButton"
+        app:layout_constraintTop_toTopOf="@+id/gasButton" />
+
+    <TextView
+        android:id="@+id/flameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No data"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/flameButton"
+        app:layout_constraintEnd_toEndOf="@+id/flameButton"
+        app:layout_constraintStart_toStartOf="@+id/flameButton"
+        app:layout_constraintTop_toTopOf="@+id/flameButton" />
+
+</android.support.constraint.ConstraintLayout>
